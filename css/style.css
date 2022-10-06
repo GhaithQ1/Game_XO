@@ -1,0 +1,77 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to left,#ffc107 50%,#9c27b0 50%);
+    height: 100vh;
+}
+
+.game{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    -webkit-transform: translate(-50% ,-50%);
+    -moz-transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+    -o-transform: translate(-50% ,-50%);
+    color: white;
+    font-size: 30px;
+    
+}
+.game .title{
+  padding: 10px 0px;
+  margin: 10px 0px;
+  width: calc(100% - 10px);
+  border-bottom: 1px solid white;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 #1a0718;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.game .title span{
+    color: yellow;
+}
+.itmee{
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 8px;
+  color: white;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(70, 20, 67, 0);
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 #1a0718;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.itmee:hover{
+    transform: scale(1.1) ;
+    cursor: pointer;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+}
+
