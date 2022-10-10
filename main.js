@@ -8,6 +8,11 @@ function end(num1, num2, num3) {
   document.getElementById("itme" + num2).style.backgroundColor = "#9c27b0";
   document.getElementById("itme" + num3).style.backgroundColor = "#9c27b0";
   setInterval(function () {
+    document.getElementById("itme" + num1).classList.add("animation");
+    document.getElementById("itme" + num2).classList.add("animation");
+    document.getElementById("itme" + num3).classList.add("animation");
+      document.getElementById("itme" + num2).style.animationDelay = "0.3s";
+      document.getElementById("itme" + num3).style.animationDelay = "0.6s";
     title.innerHTML += ".";
   }, 1000);
   setTimeout(function () {
@@ -19,7 +24,7 @@ function winner() {
   for (let i = 1; i < 10; i++) {
     aryaa[i] = document.getElementById("itme" + i).innerHTML;
   }
-  setInterval(function () {
+  setTimeout(function () {
     if (
       aryaa[1] != "" &&
       aryaa[2] != "" &&
@@ -65,4 +70,7 @@ function game(id) {
     title.innerHTML = "Role X";
   }
   winner();
+}
+function main() {
+  console.log("ghaith");
 }
