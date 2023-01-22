@@ -71,6 +71,3 @@ function game(id) {
   }
   winner();
 }
-function main() {
-  console.log("ghaith");
-}
